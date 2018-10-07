@@ -1,0 +1,64 @@
+body{
+font-family: 'Dancing Script', cursive;
+}
+
+header {
+background-color: #5b7989;
+display: flex;
+flex-flow: row wrap;
+}
+
+nav
+{
+padding-left: 78%;
+}
+
+
+@media(max-width :900px)
+{
+    article div{
+    width: 90%;
+    }
+}
+
+#fotos2{
+    background-color:  #82c3a6;
+}
+
+.f1 {
+background-color:  #82c3a6;
+margin: 0 auto;
+}
+
+#foto3:hover {
+transform: rotateZ(50deg);
+top: 5px;
+right: 20px;
+}
+
+#foto1:hover{
+
+}
+
+
+footer
+{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #C6d5c5;
+    columns: 4;
+}
+
+
+#foto2:hover{
+    transform: rotate(5deg);
+    text-shadow-color: #82c3a6 2x;
+}
+
+#foto3:hover {
+text-shadow-color: #82c3a6 2x;
+transform: rotateZ(50deg);
+top: 5px;
+right: 20px;
+}
+
+
