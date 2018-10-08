@@ -1,8 +1,11 @@
 body{
 font-family: 'Dancing Script', cursive;
+font-size: 30px;
+color: #02010a;
 }
 
 header {
+border-radius: 10px 10px 0px 0px;
 background-color: #5b7989;
 display: flex;
 flex-flow: row wrap;
@@ -10,9 +13,8 @@ flex-flow: row wrap;
 
 nav
 {
-padding-left: 78%;
+padding-left: 70%;
 }
-
 
 article {
        display: flex;
@@ -20,41 +22,54 @@ article {
        background-color: #82c3a6;
 }
 
-@media(max-width :900px)
-{
-    #paisajes div{
-    width:90%;
-    }
+footer{
+    border-radius: 0px 0px 10px 10px;
+    background-color: #C6d5c5;
+    columns: 4;
+}
+
+.img1{
+filter: blur(10px)}
+}
+
+.img4  {
+filter: grayscale(100%);
+}
+
+.img3{
+filter: sepia(90%);
+}
+
+.img4{
+filter: grayscale(100%);
+}
+
+.img6{
+filter: grayscale(100%);
 }
 
 .paisaje1 {
 width: 33.3%;
-order: 2;
 }
 
 .paisaje2 {
 width: 33.3%;
-order: 3;
 }
 
 .paisaje3 {
 width: 33.3%;
-order: 4;
 }
 
 .paisaje4 {
 width: 33.3%;
-order: 5;
 }
 
 .paisaje5 {
 width: 33.3%;
-order: 6;
 }
 
 .paisaje6 {
 width: 33.3%;
-order: 7;
 }
 
 #paisajes{
@@ -70,9 +85,59 @@ width: 33.3%;
 width: 90%;
 }
 
-footer
-{
-    border-radius: 0px 0px 10px 10px;
-    background-color: #C6d5c5;
-    columns: 4;
+@media all and (max-width: 900px) {
+	.paisaje1 {
+		width: 100%;
+	}
+
+	.paisaje2 {
+		width: 100%;
+	}
+
+	.paisaje3 {
+		width: 100%;
+	}
+
+	.paisaje4 {
+		width: 100%;
+	}
+
+	.paisaje5 {
+		width: 100%;
+	}
+
+	.paisaje6 {
+		width: 100%;
+	}
+
+	#paisajes div{
+    width:100%;
+    }
+
+    #paisajes div img{
+    width:100%;
+    }
+
+    .c1 {
+    width: 100%;
+    }
+    .c2 {
+    width: 100%;
+    }
+    .c3 {
+    width: 100%;
+    }
+    .c4 {
+    width: 100%;
+    }
+
+    #cc {
+    width:100%;
+    }
+    footer
+    {
+    text-align: center;
+    columns: 1;
+    font-size: 100%;
+    }
 }
