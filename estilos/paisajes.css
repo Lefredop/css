@@ -1,7 +1,6 @@
 body{
 font-family: 'Dancing Script', cursive;
 font-size: 30px;
-color: #02010a;
 }
 
 header {
@@ -9,17 +8,36 @@ border-radius: 10px 10px 0px 0px;
 background-color: #5b7989;
 display: flex;
 flex-flow: row wrap;
+text-shadow: 2px color #02010a;
+color: white;
 }
 
-nav
+header nav a
 {
-padding-left: 70%;
+color: white;
+}
+
+nav {
+padding-left: 42%;
 }
 
 article {
        display: flex;
        flex-flow: row wrap;
        background-color: #82c3a6;
+}
+
+.contenido{
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+    }
 }
 
 footer{
@@ -51,23 +69,18 @@ filter: grayscale(100%);
 .paisaje1 {
 width: 33.3%;
 }
-
 .paisaje2 {
 width: 33.3%;
 }
-
 .paisaje3 {
 width: 33.3%;
 }
-
 .paisaje4 {
 width: 33.3%;
 }
-
 .paisaje5 {
 width: 33.3%;
 }
-
 .paisaje6 {
 width: 33.3%;
 }
@@ -89,31 +102,24 @@ width: 90%;
 	.paisaje1 {
 		width: 100%;
 	}
-
 	.paisaje2 {
 		width: 100%;
 	}
-
 	.paisaje3 {
 		width: 100%;
 	}
-
 	.paisaje4 {
 		width: 100%;
 	}
-
 	.paisaje5 {
 		width: 100%;
 	}
-
 	.paisaje6 {
 		width: 100%;
 	}
-
 	#paisajes div{
     width:100%;
     }
-
     #paisajes div img{
     width:100%;
     }
@@ -130,7 +136,6 @@ width: 90%;
     .c4 {
     width: 100%;
     }
-
     #cc {
     width:100%;
     }
@@ -139,5 +144,13 @@ width: 90%;
     text-align: center;
     columns: 1;
     font-size: 100%;
+    }
+
+    header
+    {
+    text-align: center;
+    width: 100%;
+    display:flex; flex-direction:column;
+    justify-content: center;
     }
 }
